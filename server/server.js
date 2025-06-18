@@ -15,7 +15,9 @@ connectDB();
 connectCloudinary();
 
 const app = express();
-app.use(cors()); // Enable Cross-Origin Resource Sharing
+app.use(cors({
+  origin: 'https://quick-stay-rho.vercel.app'
+}));// Enable Cross-Origin Resource Sharing
 
 // API to listen to Stripe Webhooks
 app.post("/api/stripe",express.raw({ type: "application/json" }),stripeWebhooks);
