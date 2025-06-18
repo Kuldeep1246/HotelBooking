@@ -1,0 +1,47 @@
+# Node modules
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build output
+dist/
+build/
+client/build/
+server/build/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+
+# Misc
+coverage/
+*.log
+
+# Optional: remove system-specific files
+*.tgz
+*.zip
+
+# Next.js (if used)
+.next/
+
+# SvelteKit / Vite
+.client/
+.server/
